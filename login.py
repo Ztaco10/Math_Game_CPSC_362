@@ -10,4 +10,14 @@ def print_dashes():
     except OSError:
         print(dash * 97)
 
-print_dashes()
+def print_equals():
+    equal = '='
+
+    try:
+        column = shutil.get_terminal_size().columns
+
+        print(equal * column)
+    except OSError:
+        print(equal * 97)
+
+print_equals()
