@@ -8,6 +8,6 @@ def print_dashes():
 
         print(dash * column)
     except OSError:
-        print(dash * 80)
+        print(dash * 97)
 
 print_dashes()
