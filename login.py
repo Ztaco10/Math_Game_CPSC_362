@@ -9,3 +9,5 @@ def print_dashes():
         print(dash * column)
     except OSError:
         print(dash * 80)
+
+print_dashes()
