@@ -4,7 +4,7 @@ def print_dashes():
     dash = '-'
 
     try:
-        column = shutil.get_terminal_size().column
+        column = shutil.get_terminal_size().columns
 
         print(dash * column)
     except OSError:
