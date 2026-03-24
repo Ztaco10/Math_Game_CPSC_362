@@ -1,1 +1,1 @@
-# Math_Game_CPSC_362
+# Math_Game
