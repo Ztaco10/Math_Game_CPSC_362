@@ -64,10 +64,10 @@ def account_create():
     password = input("Enter password: ")
     while(True):
         email_or_phone = input("Would you like to create your account with email or phone number: ")
-        if(email_or_phone.toLower() == "email"):
+        if(email_or_phone.lower() == "email"):
             email = input("Please enter your email: ")
             break
-        elif(email_or_phone.toLower() == "phone"):
+        elif(email_or_phone.lower() == "phone"):
             phone = input("Please enter your phone number: ")
             break
         else:
