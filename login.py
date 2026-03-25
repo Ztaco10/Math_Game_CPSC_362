@@ -94,7 +94,19 @@ def password_change():
         return
     #check if the username exists
 
+    while(True):
+        email_or_phone = input("Is your account associated with your email or phone number: ")
+        if(email_or_phone.lower() == "email"):
+            email = input("Please enter your email: ")
+            break
+        elif(email_or_phone.lower() == "phone"):
+            phone = input("Please enter your phone number: ")
+            break
+        else:
+            print('Please enter either "email" or "phone" as your choice.')
+
     #check if the account has either a email or phone number associated with it
+
     while(True):
         password = input("Please enter a new password: ")
         rePassword = input("Please reenter your password: ")
