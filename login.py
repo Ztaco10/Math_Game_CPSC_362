@@ -89,6 +89,10 @@ def password_change():
             break
         print("Passwords did not match. Please try again")
     
+
+
+def game_summary():
+    print("This is a math zombie game where you use math problems to defeat evil zombies! As you play you can earn currency and buy powerups to better help you to defeat the zombies")
     
 
 
