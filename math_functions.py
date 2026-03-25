@@ -1,7 +1,7 @@
 import random
 
 def addition_problem(difficulty):
-    if difficulty == "Easy":
+    if difficulty == "easy":
         num1 = random.randint(0, 9)
         num2 = random.randint(0, 9)
         
@@ -12,7 +12,7 @@ def addition_problem(difficulty):
         else:
             print("Wrong")
 
-    if difficulty == "Medium":
+    if difficulty == "medium":
         choice = random.randint(1, 2)
         if choice == 1:
             num1 = random.randint(0, 99)
@@ -28,7 +28,7 @@ def addition_problem(difficulty):
         else:
             print("Wrong")
 
-    if difficulty == "Hard":
+    if difficulty == "hard":
         choice = random.randint(1, 2)
         if choice == 1:
             num1 = random.randint(99, 999)
@@ -44,8 +44,52 @@ def addition_problem(difficulty):
         else:
             print("Wrong")
 
+def subtraction_problem(difficulty):
+    if difficulty == "easy":
+        num1 = random.randint(0, 9)
+        num2 = random.randint(0, 9)
+        
+        userAnswer = int(input(f"{num1} - {num2} = "))
+
+        if userAnswer == num1 - num2:
+            print("Correct")
+        else:
+            print("Wrong")
+
+    if difficulty == "medium":
+        choice = random.randint(1, 2)
+        if choice == 1:
+            num1 = random.randint(0, 99)
+            num2 = random.randint(0, 99)
+        if choice == 2:
+            num1 = random.randint(0, 99)
+            num2 = random.randint(0, 999)
+        
+        userAnswer = int(input(f"{num1} - {num2} = "))
+
+        if userAnswer == num1 - num2:
+            print("Correct")
+        else:
+            print("Wrong")
+
+    if difficulty == "hard":
+        choice = random.randint(1, 2)
+        if choice == 1:
+            num1 = random.randint(99, 999)
+            num2 = random.randint(100, 999)
+        if choice == 2:
+            num1 = random.randint(100, 999)
+            num2 = random.randint(100, 999)
+        
+        userAnswer = int(input(f"{num1} - {num2} = "))
+
+        if userAnswer == num1 - num2:
+            print("Correct")
+        else:
+            print("Wrong")
+
 def mul_problem(difficulty):
-    if difficulty == "Easy":
+    if difficulty == "easy":
         num1 = random.randint(0, 9)
         num2 = random.randint(0, 9)
         
@@ -56,7 +100,7 @@ def mul_problem(difficulty):
         else:
             print("Wrong")
 
-    if difficulty == "Medium":
+    if difficulty == "medium":
         num1 = random.randint(0, 99)
         num2 = random.randint(0, 99)
         
@@ -67,7 +111,7 @@ def mul_problem(difficulty):
         else:
             print("Wrong")
 
-    if difficulty == "Hard":
+    if difficulty == "hard":
         num1 = random.randint(99, 999)
         num2 = random.randint(999, 999)
         
