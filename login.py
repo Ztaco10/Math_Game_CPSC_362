@@ -36,7 +36,28 @@ def login():
     username = input("Enter username: ")
     password = input("Enter password: ")
 
-def
+def account_create():
+    print('')
+    print('\033[1m' + "Account Creation Page" + '\033[0m')
+    print("If you'd like to exit then please type '1' as username")
+    
+    username = input("Please enter a valid username: ")
+    if(username == "1"):
+        print("Exiting account creation menu")
+        return
+
+    password = input("Enter password: ")
+    while(True):
+        email_or_phone = input("Would you like to create your account with email or phone number: ")
+        if(email_or_phone.toLower() == "email"):
+            email = input("Please enter your email: ")
+            break
+        elif(email_or_phone.toLower() == "phone"):
+            phone = input("Please enter your phone number: ")
+            break
+        else:
+            print('Please enter either "email" or "phone" as your choice.')
+    
     
 
 
