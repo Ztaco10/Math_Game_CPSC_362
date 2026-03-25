@@ -10,6 +10,8 @@ def print_dashes():
     except OSError:
         print(dash * 97)
 
+
+
 def print_equals():
     equal = '='
 
@@ -19,6 +21,8 @@ def print_equals():
         print(equal * column)
     except OSError:
         print(equal * 97)
+
+
 
 def main_menu():
     print('\033[1m' + "Main Menu" + '\033[0m')
@@ -30,11 +34,19 @@ def main_menu():
     choice = int(input("Please enter the corresponding number to where you'd like to go: "))
     return choice
 
+
+
 def login():
     print('')
     print('\033[1m' + "Login Page" + '\033[0m')
+
     username = input("Enter username: ")
+    #check if the username exists
+
     password = input("Enter password: ")
+    #check if the password matches the account
+
+
 
 def account_create():
     print('')
@@ -42,9 +54,12 @@ def account_create():
     print("If you'd like to exit then please type '1' as username")
     
     username = input("Please enter a valid username: ")
+    #check if the username already exists
     if(username == "1"):
         print("Exiting account creation menu")
         return
+
+
 
     password = input("Enter password: ")
     while(True):
@@ -57,6 +72,22 @@ def account_create():
             break
         else:
             print('Please enter either "email" or "phone" as your choice.')
+
+    print("Account successfully created")
+
+
+
+def password_change():
+    username = input("Please enter a valid username: ")
+    #check if the username exists
+
+    #check if the account has either a email or phone number associated with it
+    while(True):
+        password = input("Please enter a new password: ")
+        rePassword = input("Please reenter your password: ")
+        if (password == rePassword):
+            break
+        print("Passwords did not match. Please try again")
     
     
 
