@@ -103,8 +103,10 @@ print('')
 choice = 0
 
 while(True):
-    choice = main_menu()
-
+    try:
+        choice = main_menu()
+    except:
+        raise ValueError("Please enter a number from 1-5")
     if(choice == 1):
         login()
     elif(choice == 2):
@@ -116,6 +118,6 @@ while(True):
     elif(choice == 5):
         break
     else:
-        print("PlThe choices are from numbers 1-5: ")
+        print("The choices are from numbers 1-5: ")
 
     
