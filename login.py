@@ -40,10 +40,16 @@ def login():
     print('')
     print('\033[1m' + "Login Page" + '\033[0m')
 
-    username = input("Enter username: ")
+    print("If you'd like to exit then please type '1' as username")
+    
+    username = input("Enter your username: ")
+
+    if(username == "1"):
+        print("Exiting login page")
+        return
     #check if the username exists
 
-    password = input("Enter password: ")
+    password = input("Enter your password: ")
     #check if the password matches the account
 
 
@@ -56,10 +62,8 @@ def account_create():
     username = input("Please enter a valid username: ")
     #check if the username already exists
     if(username == "1"):
-        print("Exiting account creation menu")
+        print("Exiting account creation page")
         return
-
-
 
     password = input("Enter password: ")
     while(True):
@@ -78,7 +82,16 @@ def account_create():
 
 
 def password_change():
+
+    print('')
+    print('\033[1m' + "Password Change Page" + '\033[0m')
+    print("If you'd like to exit then please type '1' as username")
+    
     username = input("Please enter a valid username: ")
+
+    if(username == "1"):
+        print("Exiting changing password page")
+        return
     #check if the username exists
 
     #check if the account has either a email or phone number associated with it
@@ -92,7 +105,7 @@ def password_change():
 
 
 def game_summary():
-    print("This is a math zombie game where you use math problems to defeat evil zombies! As you play you can earn currency and buy powerups to better help you to defeat the zombies")
+    print("This is a math zombie game where you use math problems to defeat evil zombies! As you play you can earn currency and buy power-ups to better help you to defeat the zombies.")
     
 
 
