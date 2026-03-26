@@ -131,41 +131,41 @@ def game_summary():
     
 
 
+def temp():
+    print('')
+    print("_____________________________________")
+    print('\033[1m' + "| HELLO WELCOME TO ZOMBIE OVERFLOW! |" + '\033[0m')
+    print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
+    choice = 0
+    value = 0
 
-print('')
-print("_____________________________________")
-print('\033[1m' + "| HELLO WELCOME TO ZOMBIE OVERFLOW! |" + '\033[0m')
-print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
-choice = 0
-value = 0
+    while(True):
+        try:
+            if(value != 0):
+                print('')
+                print_equals()
+                print('')
 
-while(True):
-    try:
-        if(value != 0):
-            print('')
-            print_equals()
-            print('')
+            value = 1
+            choice = main_menu()
+            
+            if(choice > 5 or choice < 1):
+                raise ValueError
 
-        value = 1
-        choice = main_menu()
+        except ValueError:
+            print('\033[1m' + "*** PLEASE ENTER A NUMBER 1-5 ***" + '\033[0m')
+            value = 0
+
+        if(choice == 1):
+            login()
+        elif(choice == 2):
+            account_create()
+        elif(choice == 3):
+            password_change()
+        elif(choice == 4):
+            game_summary()
+        elif(choice == 5):
+            break
+
+
         
-        if(choice > 5 or choice < 1):
-            raise ValueError
-
-    except ValueError:
-        print('\033[1m' + "*** PLEASE ENTER A NUMBER 1-5 ***" + '\033[0m')
-        value = 0
-
-    if(choice == 1):
-        login()
-    elif(choice == 2):
-        account_create()
-    elif(choice == 3):
-        password_change()
-    elif(choice == 4):
-        game_summary()
-    elif(choice == 5):
-        break
-
-
-    
