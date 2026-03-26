@@ -133,8 +133,9 @@ def game_summary():
 
 
 print('')
-print('\033[1m' + "HELLO WELCOME TO ZOMBIE OVERFLOW!" + '\033[0m')
-print('')
+print("_____________________________________")
+print('\033[1m' + "| HELLO WELCOME TO ZOMBIE OVERFLOW! |" + '\033[0m')
+print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
 choice = 0
 value = 0
 
@@ -144,10 +145,17 @@ while(True):
             print('')
             print_equals()
             print('')
+
         value = 1
         choice = main_menu()
-    except:
-        raise ValueError("Please enter a number from 1-5")
+        
+        if(choice > 5 or choice < 1):
+            raise ValueError
+
+    except ValueError:
+        print('\033[1m' + "*** PLEASE ENTER A NUMBER 1-5 ***" + '\033[0m')
+        value = 0
+
     if(choice == 1):
         login()
     elif(choice == 2):
@@ -158,7 +166,6 @@ while(True):
         game_summary()
     elif(choice == 5):
         break
-    else:
-        print("The choices are from numbers 1-5: ")
+
 
     
