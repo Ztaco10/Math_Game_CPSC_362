@@ -1,4 +1,5 @@
 import math_functions
+
 #Game Loop
 #Main menu contains arithmetic operation selections from 1-4. break out of this loop when user enters 4
 while True:
@@ -7,6 +8,7 @@ while True:
     # ARITHMETIC OPERATIONS -------------
     # ADDIDITION OPERATIONS ------
     if arithmetic == 1:
+        
         difficulty = int(input("*** DIFFICULTY ***\n1. Easy\n2. Medium\n3. Hard\n4. Return to Main Menu\nSELECTED: "))
         # difficulty options 1-4, 4 to exit
         
