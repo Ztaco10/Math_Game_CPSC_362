@@ -2,6 +2,10 @@ import math_functions
 import login
 
 def arithmetic_operations():
+    print('')
+    login.print_equals()
+    print('')
+
     arithmetic = int(input("\n*** ARITHMETIC OPERATIONS ***\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Exit\nSELECTED: "))
     # ARITHMETIC OPERATIONS -------------
     # ADDIDITION OPERATIONS ------
@@ -113,4 +117,11 @@ while True:
         print('\033[1m' + "*** PLEASE ENTER A NUMBER 1-5 ***" + '\033[0m')
         value = 0
 
-    arithmetic_operations()
+    if(choice == 1):
+        arithmetic_operations()
+    elif(choice == 2):
+        shop()
+    elif(choice == 3):
+        profile()
+    elif(choice == 4):
+        break
