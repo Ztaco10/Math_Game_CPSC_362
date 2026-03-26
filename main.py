@@ -9,71 +9,62 @@ while True:
     if arithmetic == 1:
         difficulty = int(input("*** DIFFICULTY ***\n1. Easy\n2. Medium\n3. Hard\n4. Return to Main Menu\nSELECTED: "))
         # difficulty options 1-4, 4 to exit
-        while True:
-            if difficulty == 1:
-                count = 10
-                while count != 0:
-                    math_functions.addition_problem("easy")
-                    count -= 1
-            if difficulty == 2:
-                count = 10
-                while count != 0:
-                    math_functions.addition_problem("medium")
-                    count -= 1
-            if difficulty == 3:
-                count = 10
-                while count != 10:
-                    math_functions.addition_problem("hard")
-                    count-=10
-            if difficulty == 4:
-                print("*** Returning to Main Menu...")
-                break
+        
+        if difficulty == 1:
+            for i in range(5):
+                math_functions.addition_problem("easy")
+                
+        elif difficulty == 2:
+            for i in range(5):
+                math_functions.addition_problem("medium")
+                
+        elif difficulty == 3:
+            for i in range(5):
+                math_functions.addition_problem("hard")
+                
+        elif difficulty == 4:
+            print("*** Returning to Main Menu...")
+            break
     # SUBTRACTION OPERATIONS ------
     if arithmetic == 2:
         difficulty = int(input("*** DIFFICULTY ***\n1. Easy\n2. Medium\n3. Hard\n4. Return to Main Menu\nSELECTED: "))
         # difficulty options 1-4, 4 to exit
-        while True:
-            if difficulty == 1:
-                count = 10
-                while count != 0:
-                    math_functions.subtraction_problem("easy")
-                    count -= 1
-            if difficulty == 2:
-                count = 10
-                while count != 0:
-                    math_functions.subtraction_problem("medium")
-                    count -= 1
-            if difficulty == 3:
-                count = 10
-                while count != 10:
-                    math_functions.subtraction_problem("hard")
-                    count-=10
-            if difficulty == 4:
-                print("*** Returning to Main Menu...")
-                break
+        
+        if difficulty == 1:
+            for i in range(5):
+                math_functions.subtraction_problem("easy")
+                
+        if difficulty == 2:
+            for i in range(5):
+                math_functions.subtraction_problem("medium")
+                
+        if difficulty == 3:
+            for i in range(5):
+                math_functions.subtraction_problem("hard")
+                
+        if difficulty == 4:
+            print("*** Returning to Main Menu...")
+            break
     # MULTIPLICATION OPERATIONS ------
     if arithmetic == 3:
         difficulty = int(input("*** DIFFICULTY ***\n1. Easy\n2. Medium\n3. Hard\n4. Return to Main Menu\nSELECTED: "))
         # difficulty options 1-4, 4 to exit
-        while True:
-            if difficulty == 1:
-                count = 10
-                while count != 0:
-                    math_functions.mul_problem("easy")
-                    count -= 1
-            if difficulty == 2:
-                count = 10
-                while count != 0:
-                    math_functions.mul_problem("medium")
-                    count -= 1
-            if difficulty == 3:
-                count = 10
-                while count != 10:
-                    math_functions.mul_problem("hard")
-                    count-=10
-            if difficulty == 4:
-                print("*** Returning to Main Menu...")
-                break
+		
+        if difficulty == 1:
+            for i in range(5):
+                math_functions.mul_problem("easy")
+                
+        if difficulty == 2:
+            for i in range(5):
+                math_functions.mul_problem("medium")
+                
+        if difficulty == 3:
+            for i in range(5):
+                math_functions.mul_problem("hard")
+                
+        if difficulty == 4:
+            print("*** Returning to Main Menu...")
+            break
     # part of main menu option
     if arithmetic == 4:
         print("*** Exiting program... ***")
