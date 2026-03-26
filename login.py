@@ -25,7 +25,7 @@ def print_equals():
 
 
 def main_menu():
-    print('\033[1m' + "Main Menu" + '\033[0m')
+    print('\033[1m' + "*** MAIN MENU ***" + '\033[0m')
     print("1. Login")
     print("2. Create and Account")
     print("3. Forgot Password")
@@ -40,7 +40,7 @@ def login():
     print('')
     print_equals()
     print('')
-    print('\033[1m' + "Login Page" + '\033[0m')
+    print('\033[1m' + "*** LOGIN PAGE ***" + '\033[0m')
 
     print("If you'd like to exit then please type '1' as username")
     
@@ -60,7 +60,7 @@ def account_create():
     print('')
     print_equals()
     print('')
-    print('\033[1m' + "Account Creation Page" + '\033[0m')
+    print('\033[1m' + "*** ACCOUNT CREATION PAGE ***" + '\033[0m')
     print("If you'd like to exit then please type '1' as username")
     
     username = input("Please enter a valid username: ")
@@ -90,7 +90,7 @@ def password_change():
     print('')
     print_equals()
     print('')
-    print('\033[1m' + "Password Change Page" + '\033[0m')
+    print('\033[1m' + "*** Password RESET PAGE ***" + '\033[0m')
     print("If you'd like to exit then please type '1' as username")
     
     username = input("Please enter a valid username: ")
