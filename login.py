@@ -38,6 +38,8 @@ def main_menu():
 
 def login():
     print('')
+    print_equals()
+    print('')
     print('\033[1m' + "Login Page" + '\033[0m')
 
     print("If you'd like to exit then please type '1' as username")
@@ -55,6 +57,8 @@ def login():
 
 
 def account_create():
+    print('')
+    print_equals()
     print('')
     print('\033[1m' + "Account Creation Page" + '\033[0m')
     print("If you'd like to exit then please type '1' as username")
@@ -83,6 +87,8 @@ def account_create():
 
 def password_change():
 
+    print('')
+    print_equals()
     print('')
     print('\033[1m' + "Password Change Page" + '\033[0m')
     print("If you'd like to exit then please type '1' as username")
@@ -117,7 +123,11 @@ def password_change():
 
 
 def game_summary():
+    print('')
+    print_equals()
+    print('')
     print("This is a math zombie game where you use math problems to defeat evil zombies! As you play you can earn currency and buy power-ups to better help you to defeat the zombies.")
+    exit = input("Press enter to continue")
     
 
 
@@ -126,9 +136,15 @@ print('')
 print('\033[1m' + "HELLO WELCOME TO ZOMBIE OVERFLOW!" + '\033[0m')
 print('')
 choice = 0
+value = 0
 
 while(True):
     try:
+        if(value != 0):
+            print('')
+            print_equals()
+            print('')
+        value = 1
         choice = main_menu()
     except:
         raise ValueError("Please enter a number from 1-5")
